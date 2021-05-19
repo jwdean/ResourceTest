@@ -1,0 +1,5 @@
+name 'thing.resource_test'
+description 'Example to try and figure out things'
+version '0.0.1'
+chef_version '>= 14.0'
+supports 'windows'
