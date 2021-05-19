@@ -19,3 +19,7 @@ action :create do
   my_thing = ResourceTest::Helpers::Thing.new(new_resource.thing_name, new_resource.registry)
   my_thing.do(new_resource.thing_name, new_resource.registry)
 end
+
+action_class do
+  include ResourceTest::Helpers
+end

@@ -22,12 +22,9 @@ module ResourceTest
         if registry_key_exists?(registry)
           Chef::Log.info("Thing: Doing #{name}")
         else
-          Chef::Log.info("sThing: Doing #{name},but registry does not exist")
+          Chef::Log.info("Thing: Doing #{name}, but registry does not exist")
         end
       end
     end
   end
 end
-
-Chef::DSL::Recipe.include ResourceTest::Helpers
-Chef::Resource.include ResourceTest::Helpers
